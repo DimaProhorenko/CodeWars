@@ -1,7 +1,6 @@
 package sevenKyu;
 import java.util.Set;
 import java.util.Arrays;
-import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class TwoToOne {
