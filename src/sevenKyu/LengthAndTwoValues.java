@@ -1,5 +1,6 @@
 package sevenKyu;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 
 public class LengthAndTwoValues {
@@ -20,6 +21,10 @@ public class LengthAndTwoValues {
 			}
 		}
 		return arr;
+	}
+	
+	public static String[] alternate2(int n, String firstValue, String secondValue) {
+		return IntStream.range(0, n).mapToObj(i -> i % 2 == 0 ? firstValue : secondValue).toArray(String[]::new);
 	}
 
 }
